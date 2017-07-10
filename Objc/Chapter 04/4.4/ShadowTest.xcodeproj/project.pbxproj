@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01DFB6C116CC4CDE006A7A9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6B716CC4CDE006A7A9F /* AppDelegate.m */; };
 		01DFB6C616CC4CDE006A7A9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6BD16CC4CDE006A7A9F /* main.m */; };
-		01DFB6C716CC4CDE006A7A9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6BF16CC4CDE006A7A9F /* ViewController.m */; };
 		01DFB6C816CC4CDE006A7A9F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DFB6C016CC4CDE006A7A9F /* ViewController.xib */; };
 		01DFB6DF16CC4F5D006A7A9F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DFB6DC16CC4F5D006A7A9F /* Default-568h@2x.png */; };
 		01DFB6E016CC4F5D006A7A9F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DFB6DD16CC4F5D006A7A9F /* Default.png */; };
@@ -20,6 +19,7 @@
 		01F7243416BEBAF400DB1F0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7243316BEBAF400DB1F0E /* Foundation.framework */; };
 		01F7243616BEBAF400DB1F0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7243516BEBAF400DB1F0E /* CoreGraphics.framework */; };
 		01F7245516BEBB6000DB1F0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7245416BEBB6000DB1F0E /* QuartzCore.framework */; };
+		C13910D21F1339A6005079C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6BF16CC4CDE006A7A9F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,9 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13910D21F1339A6005079C9 /* ViewController.m in Sources */,
 				01DFB6C116CC4CDE006A7A9F /* AppDelegate.m in Sources */,
 				01DFB6C616CC4CDE006A7A9F /* main.m in Sources */,
-				01DFB6C716CC4CDE006A7A9F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
