@@ -9,17 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var containerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let button1 = customButton()
+        button1.center = CGPoint(x: 50, y: 150)
+        self.containerView.addSubview(button1)
+        
+        
+        let button2 = customButton()
+        button2.alpha = 0.5
+        button2.center = CGPoint(x: 250, y: 150)
+        self.containerView.addSubview(button2)
+    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    func customButton() -> UIButton {
 
+        var frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+        let button = UIButton(frame: frame)
+        button.backgroundColor = UIColor.white
+        button.layer.cornerRadius = 10
+        
+        //add label
+        frame = CGRect(x: 20, y: 10, width: 110, height: 30)
+        let label = UILabel(frame: frame)
+        label.text = "Hello World"
+        label.textAlignment = .center
+        button.addSubview(label)
+        
+        return button
+    }
+    
+    
 
 }
 

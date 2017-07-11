@@ -23,10 +23,7 @@ class ViewController: UIViewController {
         
         self.imageView.layer.mask = maskLayer
         
-        
-        
-        
-        
+
     }
 
 

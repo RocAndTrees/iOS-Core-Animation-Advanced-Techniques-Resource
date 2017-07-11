@@ -12,6 +12,10 @@
 		C13910A71F1327F4005079C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13910A51F1327F4005079C9 /* Main.storyboard */; };
 		C13910A91F1327F4005079C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13910A81F1327F4005079C9 /* Assets.xcassets */; };
 		C13910AC1F1327F4005079C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13910AA1F1327F4005079C9 /* LaunchScreen.storyboard */; };
+		C13910F21F13C320005079C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C13910EE1F13C320005079C9 /* Default-568h@2x.png */; };
+		C13910F31F13C320005079C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C13910EF1F13C320005079C9 /* Default.png */; };
+		C13910F41F13C320005079C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C13910F01F13C320005079C9 /* Default@2x.png */; };
+		C13910F51F13C320005079C9 /* Digits.png in Resources */ = {isa = PBXBuildFile; fileRef = C13910F11F13C320005079C9 /* Digits.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C13910A81F1327F4005079C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13910AB1F1327F4005079C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C13910AD1F1327F4005079C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13910EE1F13C320005079C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C13910EF1F13C320005079C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C13910F01F13C320005079C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C13910F11F13C320005079C9 /* Digits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Digits.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		C13910951F1327F4005079C9 = {
 			isa = PBXGroup;
 			children = (
+				C13910ED1F13C320005079C9 /* Images */,
 				C13910A01F1327F4005079C9 /* LCDClock */,
 				C139109F1F1327F4005079C9 /* Products */,
 			);
@@ -62,6 +71,17 @@
 				C13910AD1F1327F4005079C9 /* Info.plist */,
 			);
 			path = LCDClock;
+			sourceTree = "<group>";
+		};
+		C13910ED1F13C320005079C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C13910EE1F13C320005079C9 /* Default-568h@2x.png */,
+				C13910EF1F13C320005079C9 /* Default.png */,
+				C13910F01F13C320005079C9 /* Default@2x.png */,
+				C13910F11F13C320005079C9 /* Digits.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +144,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13910F41F13C320005079C9 /* Default@2x.png in Resources */,
 				C13910AC1F1327F4005079C9 /* LaunchScreen.storyboard in Resources */,
+				C13910F21F13C320005079C9 /* Default-568h@2x.png in Resources */,
+				C13910F51F13C320005079C9 /* Digits.png in Resources */,
 				C13910A91F1327F4005079C9 /* Assets.xcassets in Resources */,
 				C13910A71F1327F4005079C9 /* Main.storyboard in Resources */,
+				C13910F31F13C320005079C9 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +326,7 @@
 				C13910B21F1327F4005079C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
