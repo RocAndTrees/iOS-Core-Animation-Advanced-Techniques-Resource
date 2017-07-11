@@ -27,12 +27,12 @@ class ViewController: UIViewController {
     }
 
     func customButton() -> UIButton {
-
+        
         var frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         let button = UIButton(frame: frame)
         button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 10
-        
+        button.layer.shouldRasterize = false
         //add label
         frame = CGRect(x: 20, y: 10, width: 110, height: 30)
         let label = UILabel(frame: frame)
