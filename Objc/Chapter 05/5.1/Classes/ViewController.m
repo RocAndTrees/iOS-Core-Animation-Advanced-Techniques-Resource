@@ -23,6 +23,15 @@
     //rotate the layer 45 degrees
     CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI_4);
     self.layerView.layer.affineTransform = transform;
+    
+    UIView* view1 = [UIView new];
+    [self.view addSubview:view1];
+    view1.frame = CGRectMake(100, 200, 100, 100);
+    view1.backgroundColor = [UIColor redColor];
+    
+    view1.transform = transform;
+    
 }
 
 @end
+
