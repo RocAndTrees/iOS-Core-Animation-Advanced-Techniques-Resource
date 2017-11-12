@@ -26,7 +26,7 @@
     [self.labelView.layer addSublayer:textLayer];
 
     //uncomment the line below to fix pixelation on Retina screens
-    //textLayer.contentsScale = [UIScreen mainScreen].scale;
+    textLayer.contentsScale = [UIScreen mainScreen].scale;
     
     //set text attributes
     textLayer.foregroundColor = [UIColor blackColor].CGColor;

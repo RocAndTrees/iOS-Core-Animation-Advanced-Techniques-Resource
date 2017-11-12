@@ -49,6 +49,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     //called when creating label using Interface Builder
     [self setUp];
 }
