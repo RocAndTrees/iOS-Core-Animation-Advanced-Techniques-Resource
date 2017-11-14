@@ -24,7 +24,7 @@
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.frame = self.containerView.bounds;
     [self.containerView.layer addSublayer:gradientLayer];
-    
+
     //set gradient colors
     gradientLayer.colors = @[(__bridge id)[UIColor redColor].CGColor,
                              (__bridge id)[UIColor blueColor].CGColor];

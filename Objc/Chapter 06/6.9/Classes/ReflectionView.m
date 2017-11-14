@@ -44,6 +44,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     //this is called when view is created from a nib
     [self setUp];
 }

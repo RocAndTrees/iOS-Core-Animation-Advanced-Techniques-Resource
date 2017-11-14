@@ -31,7 +31,7 @@
     [CATransaction begin];
         
     //set the animation duration to 1 second
-    [CATransaction setAnimationDuration:1.0];
+    [CATransaction setAnimationDuration:2.0];
     
     //randomize the layer background color
     CGFloat red = arc4random() / (CGFloat)INT_MAX;

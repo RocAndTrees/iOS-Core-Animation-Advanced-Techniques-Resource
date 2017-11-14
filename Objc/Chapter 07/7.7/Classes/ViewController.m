@@ -50,7 +50,7 @@
     {
         //otherwise (slowly) move the layer to new position
         [CATransaction begin];
-        [CATransaction setAnimationDuration:4.0];
+        [CATransaction setAnimationDuration:1.0];
         self.colorLayer.position = point;
         [CATransaction commit];
     }

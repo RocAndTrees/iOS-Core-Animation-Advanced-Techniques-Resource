@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface ViewController ()<CALayerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 
@@ -24,6 +24,7 @@
     CATiledLayer *tileLayer = [CATiledLayer layer];
     tileLayer.frame = CGRectMake(0, 0, 2048, 2048);
     tileLayer.delegate = self;
+    tileLayer.contentsScale = [UIScreen mainScreen].scale;
     [self.scrollView.layer addSublayer:tileLayer];
     
     //configure the scroll view
@@ -37,11 +38,12 @@
 {
     //determine tile coordinate
     CGRect bounds = CGContextGetClipBoundingBox(ctx);
-    NSInteger x = floor(bounds.origin.x / layer.tileSize.width);
-    NSInteger y = floor(bounds.origin.y / layer.tileSize.height);
-    
+    CGFloat scale = [UIScreen mainScreen].scale;
+
+    NSInteger x = floor(bounds.origin.x / layer.tileSize.width *scale);
+    NSInteger y = floor(bounds.origin.y / layer.tileSize.height *scale);
     //load tile image
-    NSString *imageName = [NSString stringWithFormat:@"Snowman_%02i_%02i", x, y];
+    NSString *imageName = [NSString stringWithFormat:@"Snowman_%02li_%02li", (long)x, (long)y];
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
     UIImage *tileImage = [UIImage imageWithContentsOfFile:imagePath];
     

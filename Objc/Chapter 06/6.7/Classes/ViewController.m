@@ -27,11 +27,11 @@
     
     //set gradient colors
     gradientLayer.colors = @[(__bridge id)[UIColor redColor].CGColor,
-                             (__bridge id)[UIColor yellowColor].CGColor,
+                             (__bridge id)[UIColor blueColor].CGColor,
                              (__bridge id)[UIColor greenColor].CGColor];
     
     //set locations
-    gradientLayer.locations = @[@0.0, @0.25, @0.5];
+    gradientLayer.locations = @[@0.0, @0.5, @0.7];
     
     //set gradient start and end points
     gradientLayer.startPoint = CGPointMake(0, 0);
