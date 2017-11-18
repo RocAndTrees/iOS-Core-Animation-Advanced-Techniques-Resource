@@ -47,8 +47,8 @@
     animation.toValue = (__bridge id)color.CGColor;
     
     //uncomment the two lines below to solve the snap-back problem
-    //animation.fromValue = (__bridge id)self.colorLayer.backgroundColor;
-    //self.colorLayer.backgroundColor = color.CGColor;
+    animation.fromValue = (__bridge id)self.colorLayer.backgroundColor;
+    self.colorLayer.backgroundColor = color.CGColor;
     
     //apply animation to layer
     [self.colorLayer addAnimation:animation forKey:nil];

@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *containerView;
 @property (nonatomic, strong) CALayer *shipLayer;
@@ -42,7 +42,8 @@
 
 - (IBAction)stop
 {
-    [self.shipLayer removeAnimationForKey:@"rotateAnimation"];
+//    [self.shipLayer removeAnimationForKey:@"rotateAnimation"];
+    [self.shipLayer removeAllAnimations];
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
