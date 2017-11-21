@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *hourHand;
 @property (nonatomic, weak) IBOutlet UIImageView *minuteHand;
@@ -83,7 +83,7 @@
         animation.duration = 0.5;
         animation.delegate = self;
         animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:1 :0 :0.75 :1];
-    
+
         //apply animation
         handView.layer.transform = transform;
         [handView.layer addAnimation:animation forKey:nil];
