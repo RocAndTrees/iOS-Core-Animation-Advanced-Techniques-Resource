@@ -34,7 +34,7 @@
     //perform the animation
     [UIView animateWithDuration:1.0
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
+                        options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                        
         //set the position

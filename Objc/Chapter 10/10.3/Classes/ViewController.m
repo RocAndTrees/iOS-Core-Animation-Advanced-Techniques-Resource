@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UIView *layerView;
-@property (nonatomic, weak) IBOutlet CALayer *colorLayer;
+@property (nonatomic, strong) CALayer *colorLayer;
 
 @end
 
@@ -35,7 +35,7 @@
     //create a keyframe animation
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"backgroundColor";
-    animation.duration = 2.0;
+    animation.duration = 4.0;
     animation.values = @[
                          (__bridge id)[UIColor blueColor].CGColor,
                          (__bridge id)[UIColor redColor].CGColor,
@@ -46,7 +46,7 @@
     //add timing function
     CAMediaTimingFunction *fn = [CAMediaTimingFunction functionWithName:
                                  kCAMediaTimingFunctionEaseIn];
-    animation.timingFunctions = @[fn, fn, fn];
+    animation.timingFunctions = @[fn];
     
     //apply animation to layer
     [self.colorLayer addAnimation:animation forKey:nil];

@@ -23,7 +23,7 @@
     //create timing function
     CAMediaTimingFunction *function =
         [CAMediaTimingFunction functionWithName:
-         kCAMediaTimingFunctionEaseOut];
+         kCAMediaTimingFunctionEaseIn];
     
     //get control points
     CGPoint controlPoint1, controlPoint2;

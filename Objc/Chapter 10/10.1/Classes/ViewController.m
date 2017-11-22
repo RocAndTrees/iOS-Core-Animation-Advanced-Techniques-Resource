@@ -34,8 +34,9 @@
     //configure the transaction
     [CATransaction begin];
     [CATransaction setAnimationDuration:1.0];
+    //默认减速In；
     [CATransaction setAnimationTimingFunction:
-    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     
     //set the position
     self.colorLayer.position = [[touches anyObject] locationInView:self.view];
