@@ -31,7 +31,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //set up crossfade transition
     CATransition *transition = [CATransition animation];
-    transition.type = kCATransitionFade;
+    transition.type = kCATransitionPush;
     
     //apply transition to tab bar controller's view
     [self.tabBarController.view.layer addAnimation:transition forKey:nil];

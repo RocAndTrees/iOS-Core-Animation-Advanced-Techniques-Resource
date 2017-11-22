@@ -23,7 +23,7 @@
     //create a path
     UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
     [bezierPath moveToPoint:CGPointMake(0, 150)];
-    [bezierPath addCurveToPoint:CGPointMake(300, 150)
+    [bezierPath addCurveToPoint:CGPointMake(0, 300)
                   controlPoint1:CGPointMake(75, 0)
                   controlPoint2:CGPointMake(225, 300)];
     
@@ -47,7 +47,7 @@
     animation.keyPath = @"position";
     animation.duration = 4.0;
     animation.path = bezierPath.CGPath;
-    animation.rotationMode = kCAAnimationRotateAuto;
+    animation.rotationMode = kCAAnimationRotateAuto;//箭头自动旋转
     [shipLayer addAnimation:animation forKey:nil];
 }
 
