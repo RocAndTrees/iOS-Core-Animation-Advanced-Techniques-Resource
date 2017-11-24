@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     //set up data
     self.imagePaths =
         [[NSBundle mainBundle] pathsForResourcesOfType:@"png"

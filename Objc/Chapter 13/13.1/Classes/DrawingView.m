@@ -17,6 +17,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     //create a mutable path
     self.path = [[UIBezierPath alloc] init];
     self.path.lineJoinStyle = kCGLineJoinRound;

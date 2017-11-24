@@ -78,14 +78,14 @@
     cell.textLabel.text = item[@"name"];
 
     //set image shadow
-    cell.imageView.layer.shadowOffset = CGSizeMake(0, 5);
-    cell.imageView.layer.shadowOpacity = 0.75;
-    cell.clipsToBounds = YES;
+//    cell.imageView.layer.shadowOffset = CGSizeMake(0, 5);
+//    cell.imageView.layer.shadowOpacity = 0.75;
+//    cell.clipsToBounds = YES;
     
     //set text shadow
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    cell.textLabel.layer.shadowOffset = CGSizeMake(0, 2);
-    cell.textLabel.layer.shadowOpacity = 0.5;
+//    cell.textLabel.backgroundColor = [UIColor clearColor];
+//    cell.textLabel.layer.shadowOffset = CGSizeMake(0, 2);
+//    cell.textLabel.layer.shadowOpacity = 0.5;
     
     return cell;
 }

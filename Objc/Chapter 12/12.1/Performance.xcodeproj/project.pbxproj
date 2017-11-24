@@ -162,6 +162,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Charcoal Design";
+				TargetAttributes = {
+					01F7242D16BEBAF400DB1F0E = {
+						DevelopmentTeam = R5QX2A2ZZB;
+					};
+				};
 			};
 			buildConfigurationList = 01F7242916BEBAF400DB1F0E /* Build configuration list for PBXProject "Performance" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -277,6 +282,7 @@
 		01F7245216BEBAF400DB1F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Performance-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Performance-Info.plist";
@@ -288,6 +294,7 @@
 		01F7245316BEBAF400DB1F0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/Performance-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Performance-Info.plist";
